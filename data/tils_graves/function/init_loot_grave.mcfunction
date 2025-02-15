@@ -2,6 +2,4 @@ $execute on target if items entity @s weapon.* *[minecraft:custom_data~{tils_gra
 
 $execute on target run clear @s *[minecraft:custom_data~{tils_graves_compass:1b,tils_graves_owner:$(Owner)}]
 
-say check
-
 data remove entity @s interaction
