@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"tils_graves.interaction\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "tils_graves:init_init_loot_grave"
+  },
+  "sends_telemetry_event": false
+}
