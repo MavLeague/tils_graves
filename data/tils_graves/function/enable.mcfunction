@@ -6,7 +6,9 @@ execute if data storage tils_graves:data {active:true} run tellraw @a [{"text":"
 
 # add scoreboards
 execute if data storage tils_graves:data {active:true} run scoreboard objectives add tils_graves.death deathCount
+execute if data storage tils_graves:data {active:true} run scoreboard objectives add tils_graves.days dummy
 
+execute unless score #decay tils_graves.days matches 1.. run scoreboard players set #decay tils_graves.days 5
 
 # set gamerules
 gamerule keepInventory true

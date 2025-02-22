@@ -4,6 +4,7 @@ execute if data storage tils_graves:data {active:false} run tellraw @a [{"text":
 
 # add scoreboards
 execute if data storage tils_graves:data {active:false} run scoreboard objectives remove tils_graves.death
+execute if data storage tils_graves:data {active:false} run scoreboard objectives remove tils_graves.days
 
 # set gamerules
 execute if data storage tils_graves:data {keepInventory:0b} run gamerule keepInventory false

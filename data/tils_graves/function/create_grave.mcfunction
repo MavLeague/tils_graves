@@ -17,5 +17,9 @@ data modify entity @n[tag=tils_graves.display] item.components.minecraft:profile
 # give deathpoint compass
 $give @s minecraft:clock[item_name='"Grave Key"',rarity="uncommon",minecraft:custom_data={tils_graves_compass:1b,tils_graves_owner:$(UUID)}]
 
+# set decay time
+execute store result score @n[tag=tils_graves.deathPos] tils_graves.days run time query day
+scoreboard players operation @n[tag=tils_graves.deathPos] tils_graves.days += #decay tils_graves.days
+
 # reset score
 scoreboard players reset @s tils_graves.death
