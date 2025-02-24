@@ -1,5 +1,5 @@
 # drop majority of the items
-$execute if score @n[tag=tils_graves.deathPos] tils_graves.days >= #day tils_graves.days run clear @p[nbt={UUID:$(Owner)}] *[minecraft:custom_data~{tils_graves_compass:1b,tils_graves_owner:$(Owner)}]
+$execute if score @n[tag=tils_graves.deathPos] tils_graves.days >= #day tils_graves.days run clear @p[nbt={UUID:$(Owner)}] *[minecraft:custom_data~{tils_graves_compass:1b,tils_graves_owner:$(Owner)}] 1
 
 summon chest_minecart ~ ~ ~ {Tags:["tils_graves","tils_graves.Items1"],Items:[]}
 
