@@ -15,7 +15,7 @@ data modify entity @n[tag=tils_graves.deathPos] data.Owner set from entity @s UU
 data modify entity @n[tag=tils_graves.display] item.components.minecraft:profile.id set from entity @s UUID
 
 # give deathpoint compass
-$give @s minecraft:clock[item_name='"Grave Key"',rarity="uncommon",minecraft:custom_data={tils_graves_compass:1b,tils_graves_owner:$(UUID)}]
+$give @s minecraft:poisonous_potato[!consumable,custom_model_data={strings:["grave_key"]},item_name='"Grave Key"',rarity="uncommon",minecraft:custom_data={tils_graves_compass:1b,tils_graves_owner:$(UUID)}]
 
 # set decay time
 execute store result score @n[tag=tils_graves.deathPos] tils_graves.days run time query day
