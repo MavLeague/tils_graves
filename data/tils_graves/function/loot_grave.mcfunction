@@ -57,7 +57,8 @@ execute if data storage tils_graves:data {save_item:1b} run item replace entity 
 $xp add @p[nbt={UUID:$(Owner)}] $(Xp)
 data modify entity @s Xp set value 0
 
-kill @n[tag=tils_graves.interaction]
 kill @n[tag=tils_graves.display]
+kill @n[tag=tils_graves.interaction]
+kill @n[tag=tils_graves.DummyItem]
 kill @e[tag=tils_graves.Items,distance=..1]
 kill @s
