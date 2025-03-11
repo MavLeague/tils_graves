@@ -12,3 +12,9 @@ execute unless score #decay tils_graves.days matches 1.. run scoreboard players 
 
 # set gamerules
 gamerule keepInventory true
+
+
+# drop all items
+kill @e[tag=tils_graves.Items]
+kill @e[tag=tils_graves.Items1]
+kill @e[tag=tils_graves.Items2]

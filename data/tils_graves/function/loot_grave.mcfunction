@@ -1,13 +1,13 @@
 # drop majority of the items
 $execute if score @n[tag=tils_graves.deathPos] tils_graves.days >= #day tils_graves.days run clear @p[nbt={UUID:$(Owner)}] *[minecraft:custom_data~{tils_graves_compass:1b,tils_graves_owner:$(Owner)}] 1
 
-summon chest_minecart ~ ~ ~ {Tags:["tils_graves","tils_graves.Items1"],Items:[]}
+summon chest_minecart ~ ~ ~ {Tags:["tils_graves","tils_graves.Items","tils_graves.Items1"],Items:[]}
 
 data modify entity @n[tag=tils_graves.Items1] Items set from entity @s data.Items
 
 
 # dropping missing item slots manually
-summon chest_minecart ~ ~ ~ {Tags:["tils_graves","tils_graves.Items2"],Items:[]}
+summon chest_minecart ~ ~ ~ {Tags:["tils_graves","tils_graves.Items","tils_graves.Items2"],Items:[]}
 summon item_display ~ ~ ~ {Tags:["tils_graves","tils_graves.DummyItem"]}
 
 execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:27b}]
@@ -59,4 +59,5 @@ data modify entity @s Xp set value 0
 
 kill @n[tag=tils_graves.interaction]
 kill @n[tag=tils_graves.display]
+kill @e[tag=tils_graves.Items,distance=..1]
 kill @s
