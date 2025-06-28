@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "components": {
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "grave_key"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item"
+    ]
+  ],
+  "rewards": {
+    "function": "tils_graves:update_item"
+  }
+}
