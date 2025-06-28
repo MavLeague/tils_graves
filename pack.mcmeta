@@ -2,7 +2,7 @@
     "pack": {
         "description": "This simple Pack adds Gravestones by death",
         "pack_format": 71,
-        "supported_formats": { "min_inclusive": 48, "max_inclusive": 71 }
+        "supported_formats": { "min_inclusive": 48, "max_inclusive": 81 }
     },
     "overlays": {
       "entries": [
