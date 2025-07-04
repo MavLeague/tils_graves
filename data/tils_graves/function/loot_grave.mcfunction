@@ -38,19 +38,19 @@ execute store success storage tils_graves:data save_item byte 1 run data modify 
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.8 from entity @n[tag=tils_graves.DummyItem] contents
 
 # Offhand
-execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:-106b}]
+execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[].chest
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.9 from entity @n[tag=tils_graves.DummyItem] contents
 # Boots
-execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:100b}]
+execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[].feet
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.10 from entity @n[tag=tils_graves.DummyItem] contents
 # Leggins
-execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:101b}]
+execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[].head
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.11 from entity @n[tag=tils_graves.DummyItem] contents
 # Chestplate
-execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:102b}]
+execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[].legs
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.12 from entity @n[tag=tils_graves.DummyItem] contents
 # Helmet
-execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[{Slot:103b}]
+execute store success storage tils_graves:data save_item byte 1 run data modify entity @n[tag=tils_graves.DummyItem] item set from entity @s data.Items[].offhand
 execute if data storage tils_graves:data {save_item:1b} run item replace entity @n[tag=tils_graves.Items2] container.13 from entity @n[tag=tils_graves.DummyItem] contents
 
 

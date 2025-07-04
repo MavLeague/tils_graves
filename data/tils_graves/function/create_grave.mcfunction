@@ -5,6 +5,7 @@ summon item_display ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["tils_graves","tils_grav
 
 # Set Grave Contents
 data modify entity @n[tag=tils_graves.deathPos] data.Items set from entity @s Inventory
+data modify entity @n[tag=tils_graves.deathPos] data.Items append from entity @s equipment
 clear @s
 
 data modify entity @n[tag=tils_graves.deathPos] data.Xp set from entity @s XpTotal
