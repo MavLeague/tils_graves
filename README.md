@@ -15,4 +15,6 @@ There's now a Texture!
 #
 If you wanna give **Feedback**, have **Feature requests** or if you've found some **Bugs**, don't bother but reach out to me [here!][Issue Tracker]
 
+[![License: LICENSE-CC-BY-NC-4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue)](https://github.com/MavLeague/tils_graves/blob/main/LICENSE-CC-BY-NC-4.0.md)
+
 [Issue Tracker]: https://github.com/MavLeague/tils_graves/issues
