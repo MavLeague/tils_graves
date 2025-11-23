@@ -1,17 +1,23 @@
 {
     "pack": {
         "description": "This simple Pack adds Gravestones by death",
-        "pack_format": 71,
-        "supported_formats": { "min_inclusive": 48, "max_inclusive": 81 }
-    },
+        "pack_format": 88,
+        "min_format": 48,
+        "max_format": 88,
+        "supported_formats": { "min_inclusive": 48, "max_inclusive": 88 }
+    },  
     "overlays": {
       "entries": [
         {
           "formats": { "min_inclusive": 48, "max_inclusive": 57 },
+          "min_format": 48,
+          "max_format": 57,
           "directory": "1_21"
         },
         {
           "formats": { "min_inclusive": 58, "max_inclusive": 61 },
+          "min_format": 58,
+          "max_format": 61,
           "directory": "1_21_4"
         }
       ]

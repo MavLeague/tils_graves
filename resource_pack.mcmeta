@@ -1,13 +1,17 @@
 {
     "pack": {
         "description": "All Ressources for Tils Graves",
-        "pack_format": 55,
-        "supported_formats": { "min_inclusive": 34, "max_inclusive": 64 }
+        "pack_format": 69,
+        "min_format": 34,
+        "max_format": 69,
+        "supported_formats": { "min_inclusive": 34, "max_inclusive": 69 }
     },
     "overlays": {
       "entries": [
         {
           "formats": { "min_inclusive": 34, "max_inclusive": 42 },
+          "min_format": 34,
+          "max_format": 42,
           "directory": "1_21"
         }
       ]
