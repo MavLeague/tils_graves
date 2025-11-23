@@ -9,6 +9,8 @@ data modify entity @n[tag=tils_graves.deathPos] data.Items append from entity @s
 clear @s
 
 data modify entity @n[tag=tils_graves.deathPos] data.Xp set from entity @s XpTotal
+data modify entity @n[tag=tils_graves.deathPos] data.XpLevel set from entity @s XpLevel
+data modify entity @n[tag=tils_graves.deathPos] data.XpP set from entity @s XpP
 xp add @s -2147483648
 
 data modify entity @n[tag=tils_graves.deathPos] data.Owner set from entity @s UUID

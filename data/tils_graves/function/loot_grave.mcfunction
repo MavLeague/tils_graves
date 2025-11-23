@@ -55,7 +55,11 @@ execute if data storage tils_graves:data {save_item:1b} run item replace entity 
 
 
 $xp add @p[nbt={UUID:$(Owner)}] $(Xp)
+$xp set @p[nbt={UUID:$(Owner)}] $(XpLevel) levels
+$execute as @p[nbt={UUID:$(Owner)}] unless data entity @s {XpP:$(XpP)f,XpLevel:$(XpLevel)} run tellraw @s {"text":"[Til's Graves] An error ocurred while restoring your experience!","color":"red"}
 data modify entity @s Xp set value 0
+data modify entity @s XpLevel set value 0
+data modify entity @s XpP set value 0
 
 kill @n[tag=tils_graves.display]
 kill @n[tag=tils_graves.interaction]
